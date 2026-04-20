@@ -1,16 +1,16 @@
 {
     "error": {
-        "not_standing_up": "Dalış teçhizatını takmak için ayağa kalkman gerekiyor",
-        "need_otube": "You need to refill your oxygen! Get a replacement air supply!",
-        "underwater": "You cannot do this underwater..."
+        "not_standing_up": "Tu dois te lever pour enfiler ton équipement de plongée",
+        "need_otube": "Tu dois recharger ton oxygène ! Procure-toi une réserve d'air de rechange !",
+        "underwater": "Tu ne peux pas faire ça sous l'eau."
     },
     "success": {
-        "took_out": "Dalgıç giysini çıkardın",
-        "tube_filled": "You've successfully refilled your air tank!"
+        "took_out": "Tu as retiré ta combinaison de plongée",
+        "tube_filled": "Tu as réussi à recharger ta bouteille d'air !"
     },
     "info": {
-        "put_suit": "Dalış kıyafeti giy",
-        "pullout_suit": "Dalgıç kıyafeti çıkarılıyor..",
-        "filling_air": "Filling air..."
+        "put_suit": "Enfile ta combinaison de plongée",
+        "pullout_suit": "Retrait de la combinaison de plongée..",
+        "filling_air": "Remplissage d'air.."
     }
 }

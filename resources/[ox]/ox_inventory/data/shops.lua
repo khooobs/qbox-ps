@@ -1,6 +1,6 @@
 return {
 	General = {
-		name = 'Shop',
+		name = 'Magasin',
 		blip = {
 			id = 59, colour = 69, scale = 0.8
 		}, inventory = {
@@ -33,7 +33,7 @@ return {
 	},
 
 	Liquor = {
-		name = 'Liquor Store',
+		name = "Magasin d'alcool",
 		blip = {
 			id = 93, colour = 69, scale = 0.8
 		}, inventory = {
@@ -59,7 +59,7 @@ return {
 	},
 
 	YouTool = {
-		name = 'YouTool',
+		name = 'Quincaillerie',
 		blip = {
 			id = 402, colour = 69, scale = 0.8
 		}, inventory = {
@@ -105,7 +105,7 @@ return {
 	},
 
 	PoliceArmoury = {
-		name = 'Police Armoury',
+		name = 'Armurerie de police',
 		groups = shared.police,
 		blip = {
 			id = 110, colour = 84, scale = 0.8

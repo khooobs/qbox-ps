@@ -24,6 +24,7 @@
     "info": {
         "car_e": "E - Ouvrir le garage",
         "park_e": "E - Stocker le véhicule",
-        "impound_e": "E - Ouvrir la fourrière"
+        "impound_e": "E - Ouvrir la fourrière",
+        "public_parking": "Parking public"
     }
 }

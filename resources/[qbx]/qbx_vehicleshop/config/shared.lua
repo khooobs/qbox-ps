@@ -346,7 +346,7 @@ return {
                 targetDistance = 10,
             },
             blip = {
-                label = 'Marina Shop',
+                label = 'Marina',
                 coords = vec3(-738.25, -1334.38, 1.6),
                 show = true,
                 sprite = 410,
@@ -384,7 +384,7 @@ return {
                 targetDistance = 5,
             },
             blip = {
-                label = 'Air Shop',
+                label = "Garage d'aéronef",
                 coords = vec3(-1652.76, -3143.4, 13.99),
                 show = true,
                 sprite = 251,
