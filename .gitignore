@@ -16,3 +16,4 @@ resources/[standalone]/cc-chat/chat_log.log
 resources/[chat]/cc-chat/chat_log.log
 /resources/[addons]/esx_property/properties.json
 resources/\[divers\]/frozen-poker/evaluator/HandRanks.dat
+resources/[npwd]/npwd/sv_npwd.log
