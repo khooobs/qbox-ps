@@ -92,7 +92,7 @@ return {
         },
 
         stations = {
-            {label = 'Pillbox Hospital', coords = vec4(304.27, -600.33, 43.28, 272.249)},
+            {label = 'Hopital de Pillbox', coords = vec4(304.27, -600.33, 43.28, 272.249)},
         }
     },
 }

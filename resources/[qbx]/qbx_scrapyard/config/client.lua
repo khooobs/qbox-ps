@@ -5,13 +5,13 @@ return {
     locations = {
         main = {
             coords = vec4(2403.51, 3127.95, 48.15, 250),
-            blipName = 'Scrap Yard',
+            blipName = 'Décharge',
             blipIcon = 380,
             pedModel = 'a_m_m_hillbilly_01'
         },
         deliver = {
             coords = vec3(2351.5, 3132.96, 48.2),
-            blipName = 'Scrap Yard Delivery',
+            blipName = 'Quai de déchargement',
             blipIcon = 810,
         }
     }

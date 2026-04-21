@@ -1,0 +1,47 @@
+{
+    "notify":{
+        "freedom":"Liberté !",
+        "new_time_by_roster":"Nouveau temps d'emprisonnement",
+        "new_time_by_roster_description":"Votre temps de prison a été défini sur %s mois !",
+        "unjailed_by_roster":"Your jail time was set to zero, you're being released!",
+        "no_access":"Vous n'avez pas accès à cette commande ",
+        "updated_players_time":"Mise à jour du temps carcéral pour %s à %s mois",
+        "player_sent":"Envoyé %s en prison pour %s mois",
+        "time_updated_description":"Votre temps de prison a été redéfini pour %s mois",
+        "time_updated":"Nouveau temps d'emprisonnement",
+        "invalid_player":"Individu invalide",
+        "lost_job":"Vous avez perdu votre boulot !",
+        "confiscated":"Vos objets ont été saisis !",
+        "returned_items":"Vous avez récupéré vos objets !",
+        "player_released":"%s a été relaché !",
+        "lifer":"Vous êtes en prison à vie !",
+        "jail_time":"Durée d'emprisonnement",
+        "time_left":"Il vous reste %s mois restant",
+        "no_time_left":"Vous n'avez plus de temps d'emprisonnement restant",
+        "time_remaining":"Temps restant: %s mois",
+        "completed_hack":"Vous avez réussi le piratage!",
+        "failed_hack":"Vous avez échoué le piratage !",
+        "escaped":"Vous vous êtes échappé de prison !",
+        "checkout":"Vérifiez le temps qu'il vous reste",
+        "wait_before_check":"Patientez avant de reconsulter votre temps restant !"
+    },
+
+    "commands":{
+        "jail":"Emprisonner",
+        "unjail":"Relâcher de prison",
+        "playerid":"Identité",
+        "check_time":"Vérifier votre temps de prison",
+        "prisoners_roster":"Consulter et gérer les prisonniers"
+    },
+
+    "input":{
+        "jail_player":"Emprisonner",
+        "playerid":"Identité",
+        "jailtime":"Temps d'emprisonnement",
+        "months":"Mois ( Minutes )",
+        "hack_gate":"Pirater la porte de prison",
+        "hacking":"Terminal de piratage..",
+        "check_time":"Vérifier le temps",
+        "prison_sentence":"**Sentance:** %s  \n%s"
+    }
+}

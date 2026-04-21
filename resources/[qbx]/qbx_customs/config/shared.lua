@@ -28,7 +28,7 @@ return {
                 sprite = 72,
                 color = 3,
                 scale = 0.8,
-                label = 'Los Santos Customs - Vinewood',
+                label = 'Los Santos Customs',
             },
             points = {
                 vec3(-344.36, -121.92, 38.60),
@@ -43,7 +43,7 @@ return {
                 sprite = 72,
                 color = 3,
                 scale = 0.8,
-                label = 'Los Santos Customs - Airport',
+                label = 'Los Santos Customs',
             },
             points = {
                 vec3(-1147.7, -1990.31, 13.15),
@@ -59,7 +59,7 @@ return {
                 sprite = 72,
                 color = 3,
                 scale = 0.8,
-                label = 'Los Santos Customs - East',
+                label = 'Los Santos Customs',
             },
             points = {
                 vec3(724.93, -1092.04, 22.15),
@@ -74,7 +74,7 @@ return {
                 sprite = 72,
                 color = 3,
                 scale = 0.8,
-                label = 'Los Santos Customs - Sandy Shores',
+                label = 'Los Santos Customs',
             },
             points = {
                 vec3(1172.12, 2644.76, 38.55),
@@ -89,7 +89,7 @@ return {
                 sprite = 72,
                 color = 3,
                 scale = 0.8,
-                label = 'Los Santos Customs - Paleto',
+                label = 'Los Santos Customs',
             },
             points = {
                 vec3(115.55, 6625.32, 31.75),

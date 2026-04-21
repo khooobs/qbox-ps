@@ -44,7 +44,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -59,7 +59,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -74,7 +74,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -89,7 +89,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -104,7 +104,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -119,7 +119,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -134,7 +134,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -149,7 +149,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -164,7 +164,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -179,7 +179,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -194,7 +194,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -209,7 +209,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -224,7 +224,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -239,7 +239,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Public Parking',
+                        name = locale('info.public_parking'),
                         sprite = 357,
                         color = 3,
                     },
@@ -299,7 +299,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Boathouse',
+                        name = 'Quai',
                         sprite = 356,
                         color = 3,
                     },
@@ -314,7 +314,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Boathouse',
+                        name = 'Quai',
                         sprite = 356,
                         color = 3,
                     },
@@ -329,7 +329,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Boathouse',
+                        name = 'Quai',
                         sprite = 356,
                         color = 3,
                     },
@@ -408,7 +408,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Impound Lot',
+                        name = 'Fourrière',
                         sprite = 68,
                         color = 3,
                     },
@@ -426,7 +426,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'Air Depot',
+                        name = "Hangar d'aéronef",
                         sprite = 359,
                         color = 3,
                     },
@@ -444,7 +444,7 @@ return {
             accessPoints = {
                 {
                     blip = {
-                        name = 'LSYMC Depot',
+                        name = 'Garage de la Marina',
                         sprite = 356,
                         color = 3,
                     },

@@ -4,12 +4,12 @@ return {
     locations = {
         vineyard = {
             coords = vec3(-1877.35, 2132.57, 127.93),
-            blipName = 'Vineyard',
+            blipName = 'Vignoble',
             blipIcon = 827,
         },
         vineyardProcessing = {
             coords = vec3(-1928.8, 2059.75, 141.0),
-            blipName = 'Vineyard Processing',
+            blipName = 'Entrepôt du Vignoble',
             blipIcon = 270
         }
     },
