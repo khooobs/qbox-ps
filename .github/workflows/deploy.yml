@@ -1,0 +1,23 @@
+name: Deploy FiveM Resource
+
+on:
+  push:
+    branches: [dev]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.KEY }}
+          fingerprint: ${{ secrets.FINGERPRINT }}
+          script: |
+            cd /opt/FXServer/server/txData/Qbox_E21682.base/
+            git pull origin dev
