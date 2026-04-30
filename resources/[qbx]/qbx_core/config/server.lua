@@ -12,8 +12,8 @@ return {
     },
 
     player = {
-        hungerRate = 4.2, -- Rate at which hunger goes down.
-        thirstRate = 3.8, -- Rate at which thirst goes down.
+        hungerRate = 0, -- Rate at which hunger goes down.
+        thirstRate = 0, -- Rate at which thirst goes down.
 
         ---@enum BloodType
         bloodTypes = {
