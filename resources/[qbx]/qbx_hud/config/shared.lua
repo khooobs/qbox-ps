@@ -1,6 +1,6 @@
 return {
     stress = {
-        enableStress = true, -- If false, it will disable stress for everyone
+        enableStress = false, -- If false, it will disable stress for everyone
     },
 
     menu = { -- Don't touch
