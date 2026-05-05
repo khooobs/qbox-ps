@@ -53,10 +53,10 @@ return {
         consume = 0.3
     },
 
-    ['bandage'] = {
-        label = 'Bandage',
-        weight = 115,
-    },
+    -- ['bandage'] = {
+    --     label = 'Bandage',
+    --     weight = 115,
+    -- },
 
     ['burger'] = {
         label = 'Burger',
@@ -633,4 +633,43 @@ return {
         label = 'Handcuffs',
         weight = 200,
     },
+
+    -- ab_medic items
+        ["medical_kit"] = {
+            label = "Kit Médical",
+            weight = 3000,
+            stack = false,
+            close = true,
+            description = "Pour soigner toute les blessures et réanimer quelqu'un d'inconscient.",
+            consume = 0,
+            client = {
+                image = "medical_kit.png",
+                export = 'qbx_Ab_Medic.medical_kit'
+            }    
+        },
+        ["bandage"] = {
+            label = "Bandage",
+            weight = 500,
+            stack = true,
+            close = false,
+            description = "Pour soigner les petites blessures.",
+            consume = 0,
+            client = {
+                image = "bandage.png",
+                export = 'qbx_Ab_Medic.bandage'
+            }    
+        },
+        ["stethoscope"] = {
+            label = "Stéthoscope",
+            weight = 1000,
+            stack = false,
+            close = false,
+            description = "Pour examiner un patient.",
+            consume = 0,
+            client = {
+                image = "stethoscope.png",
+                export = 'qbx_Ab_Medic.Stéthoscope'
+            }    
+        },
+
 }
