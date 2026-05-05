@@ -349,4 +349,18 @@ return {
             },
         },
     },
+        
+    -- new job pour PS RP
+
+    ['admin'] = {
+		label = 'Admin',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            [0] = {
+                name = 'Superviseur',
+                payment = 0
+            },
+        },
+	},
 }

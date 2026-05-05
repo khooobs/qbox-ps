@@ -22,8 +22,8 @@ shared = {
     networkdumpsters = GetConvarInt('inventory:networkdumpsters', 0) == 1
 }
 
-shared.dropslots = GetConvarInt('inventory:dropslots', shared.playerslots)
-shared.dropweight = GetConvarInt('inventory:dropweight', shared.playerweight)
+shared.dropslots = 0 --GetConvarInt('inventory:dropslots', shared.playerslots)
+shared.dropweight = 0 --GetConvarInt('inventory:dropweight', shared.playerweight)
 
 do
     if type(shared.police) == 'string' then
@@ -49,21 +49,21 @@ if IsDuplicityVersion() then
         trimplate = GetConvarInt('inventory:trimplate', 1) == 1,
         vehicleloot = json.decode(GetConvar('inventory:vehicleloot', [[
 			[
-				["sprunk", 1, 1],
-				["water", 1, 1],
-				["garbage", 1, 2, 50],
-				["panties", 1, 1, 5],
-				["money", 1, 50],
-				["money", 200, 400, 5],
-				["bandage", 1, 1]
+				-- ["sprunk", 1, 1],
+				-- ["water", 1, 1],
+				-- ["garbage", 1, 2, 50],
+				-- ["panties", 1, 1, 5],
+				-- ["money", 1, 50],
+				-- ["money", 200, 400, 5],
+				-- ["bandage", 1, 1]
 			]
 		]])),
         dumpsterloot = json.decode(GetConvar('inventory:dumpsterloot', [[
 			[
-				["mustard", 1, 1],
-				["garbage", 1, 3],
-				["money", 1, 10],
-				["burger", 1, 1]
+				-- ["mustard", 1, 1],
+				-- ["garbage", 1, 3],
+				-- ["money", 1, 10],
+				-- ["burger", 1, 1]
 			]
 		]])),
     }

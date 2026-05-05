@@ -720,3 +720,23 @@ lib.addCommand('viewinv', {
 }, function(source, args)
 	Inventory.InspectInventory(source, tonumber(args.invId) or args.invId)
 end)
+
+
+-- AJOUT ABESSES
+
+	    RegisterNetEvent("Ab_ox_inventory:server:getPlayerFullName", function(targetId)
+        local src = source
+        local Player = exports.qbx_core:GetPlayer(targetId) -- Récupère les données du joueur
+
+    
+        if Player then
+            local firstName = Player.PlayerData.charinfo.firstname
+            local lastName = Player.PlayerData.charinfo.lastname
+            --print (firstName.. ' ' ..lastName)
+            TriggerClientEvent("ox_inventory:receivePlayerFullName", src, targetId, firstName, lastName)
+        else
+            TriggerClientEvent("ox_inventory:receivePlayerFullName", src, targetId, 'inconnu', '')
+        end
+    end)
+
+-- FIN 

@@ -1692,6 +1692,27 @@ local function isGiveTargetValid(ped, coords)
     return entity == ped and IsEntityVisible(ped)
 end
 
+--  AJOUT Abesses
+
+local waitedName = 'inconnu'
+
+	RegisterNetEvent("ox_inventory:receivePlayerFullName", function(targetId, firstName, lastName)
+		if firstName and lastName then
+			local playerName = firstName .. " " .. lastName
+			waitedName = playerName
+		else
+			local playerName = 'inconnu'
+		end
+	end)
+
+	function requestPlayerName(targetId)
+		TriggerServerEvent("Ab_ox_inventory:server:getPlayerFullName", targetId)
+	end
+
+	
+
+-- fin
+
 RegisterNUICallback('giveItem', function(data, cb)
 	cb(1)
 
@@ -1713,14 +1734,21 @@ RegisterNUICallback('giveItem', function(data, cb)
 
         local giveList, n = {}, 0
 
+		-- modif par Abesses pour ce "for" afin de faire apparaitre nom prenom du joueur et pas le pseudo
 		for i = 1, #nearbyPlayers do
 			local option = nearbyPlayers[i]
 
-            if isGiveTargetValid(option.ped, option.coords) then
-				local playerName = GetPlayerName(option.id)
+			if isGiveTargetValid(option.ped, option.coords) then -- modifié
 				option.id = GetPlayerServerId(option.id)
-                ---@diagnostic disable-next-line: inject-field
-				option.label = ('[%s] %s'):format(option.id, playerName)
+				--print('option.id ' ..option.id)
+				-- Demande au serveur le prénom et nom
+				requestPlayerName(option.id)
+			Wait(200)
+				-- Affichage temporaire (remplacé après réception des données)
+				local playerName = waitedName
+			
+				---@diagnostic disable-next-line: inject-field
+				option.label = ('%s'):format(playerName)
 				n += 1
 				giveList[n] = option
 			end
