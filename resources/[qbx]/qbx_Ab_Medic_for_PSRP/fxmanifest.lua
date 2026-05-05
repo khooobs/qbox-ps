@@ -9,6 +9,7 @@ shared_scripts {
     '@qbx_core/shared/locale.lua',
     '@ox_lib/init.lua',
 	'@qbx_core/modules/lib.lua',
+    '@qbx_core/modules/playerdata.lua',
     'config.lua'
 }
 
