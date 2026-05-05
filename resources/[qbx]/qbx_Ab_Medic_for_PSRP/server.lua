@@ -22,10 +22,10 @@ end )
 
     end)
     
-    RegisterNetEvent('qbx_Ab_Medic:server:ItemUseMedKit', function()
+    RegisterNetEvent('qbx_Ab_Medic:server:ItemUseMedKit', function(playerSrc)
         local src = source
 
-        exports.ox_inventory:RemoveItem(src, "medical_kit", 1)
+        exports.ox_inventory:RemoveItem(playerSrc, "medical_kit", 1)
 
     end)
     --small heal
