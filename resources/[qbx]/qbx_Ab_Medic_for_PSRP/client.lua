@@ -321,7 +321,7 @@
         if playerCurrentHealth < playerMaxHealth then
             -- Appeler la fonction générique soigner
             FullHealPlayer(playerPedid, playerCurrentHealth, playerMaxHealth)
-            TriggerServerEvent('qbx_Ab_Medic:server:ItemUseMedKit')
+            TriggerServerEvent('qbx_Ab_Medic:server:ItemUseMedKit',playerSrc)
         else
             TriggerServerEvent('qbx_Ab_Medic:server:notifyNoNeedHeal', playerSrc)
         end
