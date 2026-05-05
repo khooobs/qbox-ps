@@ -1,3 +1,7 @@
+RegisterNetEvent( 'qbx_Ab_Medic:Server:SetMute', function ( ClientId, IsMute )
+    MumbleSetPlayerMuted( ClientId, IsMute )
+end )
+
 -- Event d'action medical
     -- revive
     RegisterNetEvent('qbx_Ab_Medic:server:RevivePlayer', function(target, command)

@@ -145,6 +145,7 @@
             
             local playerPed = PlayerPedId()
             local playerindex = PlayerId()
+            
             local playerServerId = GetPlayerServerId(playerindex)
 
             -- Vérifie si le joueur est mort ou inconscient
@@ -182,7 +183,8 @@
                         TriggerServerEvent('qbx_Ab_Medic:server:saveReason', Raison) -- Envoie la raison au serveur
                 else
 
-                    MumbleSetPlayerMuted( playerServerId, true )
+                    print("playerServerId " ..playerServerId)
+                    TriggerServerEvent('qbx_Ab_Medic:Server:SetMute',playerServerId, true)
 
                     -- Active l'interface NUI pour saisir la raison
                     SetNuiFocus(true, true)
@@ -213,7 +215,7 @@
                             type = "close"
                         })
                     end
-                    MumbleSetPlayerMuted( playerServerId, false )
+                    TriggerServerEvent('qbx_Ab_Medic:Server:SetMute',playerServerId, false)
                 end
             end
             
