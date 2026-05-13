@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Windows 95 Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div id="video-container">
+        <div class="window-title">
+            Video Player - RxD
+            <button id="close-btn">✕</button>
+        </div>
+        <div id="video-wrapper">
+            <div id="youtube-player"></div>
+        </div>
+        <div class="controls">
+            <div class="volume-container">
+                <label>Volume:</label>
+                <input type="range" id="volume-slider" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -672,4 +672,133 @@ return {
             }    
         },
 
+    -- ab_weed_items
+        ["os_weed"] = {
+            label = "Pochon de weed",
+            weight = 300,
+            stack = true,
+            close = false,
+            consume = 0,
+            client = {
+                image = "weed_pochon.png",
+                export = 'qbx_Ab_Weed.os_weed'
+            },
+            buttons = {
+                {
+                    label = 'Rouler un joint',
+                    action = function(slot)
+                        --print('roule un join')
+                        local paperhere = exports.ox_inventory:GetItemCount("os_rollpaper")
+                        local cighere = exports.ox_inventory:GetItemCount("cigarette")
+                        src = source
+                        
+                        --print (json.encode(paperhere))
+                    
+                        if paperhere > 0 then
+                            --print ("paper present")
+                            if cighere > 0 then 
+                                --print ("cig present")
+                                -- Appel au serveur pour retirer les items et ajouter un joint
+                                TriggerServerEvent('qbx_Ab_Weed:craftJoin', slot)
+                                TriggerServerEvent('qbx_Ab_Garbages:server:addTrash', 'Pochon_empty')
+                            else
+                                --print ("cig absent")
+                                exports.qbx_core:Notify("il faut une cigarette", 'error', 7000)
+                            end
+                        else
+                            --print ("paper absent")
+                            exports.qbx_core:Notify("il faut du papier à rouler", 'error', 7000)
+                        end
+                    end
+                },
+            }         
+        },
+        ["os_rollpaper"] = {
+            label = "Papier à rouler",
+            weight = 100,
+            stack = true,
+            close = false,
+            consume = 0,
+            client = {
+                image = "weed_papier.png",
+                export = 'qbx_Ab_Weed.os_rollpaper'
+            },       
+        },
+        ["os_joint"] = {
+            label = "Joint",
+            weight = 200,
+            stack = true,
+            close = true,
+            client = {
+                image = "joint.png",
+                export = 'qbx_Ab_Weed.os_joint'
+            },       
+        },
+        ["cig_pack"] = {
+            label = "Paquet de cigarette",
+            weight = 500,
+            stack = true,
+            close = false,
+            consume = 0,
+            client = {
+                image = "cig_pack.png",
+                export = 'qbx_Ab_Weed.cig_pack'
+            },
+            buttons = {
+                {
+                    label = 'Ouvrir le paquet',
+                    action = function(slot)
+                        src = source
+
+                        TriggerServerEvent('qbx_Ab_Weed:openCigPack', slot)
+
+                    end
+                },
+            }         
+        },
+        ['cigarette'] = {
+            label = "Cigarette",
+            weight = 25,
+            stack = true,
+            close = true,
+            client = {
+                image = "cigarette.png",
+                export = 'qbx_Ab_Weed.cigarette'
+            },       
+        },
+        ['cigare'] = {
+            label = "cigare",
+            weight = 100,
+            stack = true,
+            close = true,
+            client = {
+                image = "cigare.png",
+                export = 'qbx_Ab_Weed.cigare'
+            },       
+        },
+        ["water_can"] = {
+            label = "Arrosoir",
+            weight = 800,
+            stack = false,
+            close = false,
+            consume = 0,
+            description = "Un Arrosoir vide.",
+            client = {
+                image = "water_can.png",
+                export = 'qbx_Ab_Weed.water_can'
+            },       
+        },
+        ["water_can_full"] = {
+            label = "Arrosoir plein d'eau",
+            weight = 5000,
+            stack = false,
+            close = false,
+            consume = 0,
+            description = "Un Arrosoir plein d'eau.",
+            client = {
+                image = "water_can_full.png",
+                export = 'qbx_Ab_Weed.water_can_full'
+            },       
+        },
+
 }
