@@ -94,10 +94,16 @@ return {
 
     characters = {
         playersNumberOfCharacters = { -- Define maximum amount of player characters by rockstar license (you can find this license in your server's database in the player table)
-            ['license2:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'] = 5,
+            ['license2:7079a35c938bb5c63be279fef7b37369ef560500'] = 5, --slart
+            ['license2:3e04eddda85fb6f315d6aa42b4e4c96adba18ca1'] = 5, --Nhelim
+            ['license2:f8ad8c20ad94a570d998a43c724e30f0d2e9c73c'] = 5, --Eazy
+            ['license2:da6290da37eee94c9f66ecfbdc23ac4c4b5b785b'] = 5, --IamYou
+            ['license2:6100ca5da522757a727dd411d67da66c452820e2'] = 5, --Khobs
+            ['license2:3fe7dfdd18ab5252fd2e0e1b27823ee44c6ebce4'] = 5, --Abesses
+
         },
 
-        defaultNumberOfCharacters = 3, -- Define maximum amount of default characters (maximum 3 characters defined by default)
+        defaultNumberOfCharacters = 1, -- Define maximum amount of default characters (maximum 3 characters defined by default)
     },
 
     -- this configuration is for core events only. putting other webhooks here will have no effect
