@@ -17,6 +17,9 @@ CreateThread(function()
                 return 
             end
 
+            local isActive = Freecam:IsActive()
+            Freecam:SetActive(not isActive)
+
         end
 
         Wait(0)
