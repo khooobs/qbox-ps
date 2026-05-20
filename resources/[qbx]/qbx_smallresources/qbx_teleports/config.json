@@ -24,6 +24,19 @@
                 "allowVehicle": false,
                 "drawText": "Coke Processing"
             }
+        ],
+        
+        [
+            {
+                "coords": [240.59, -1004.77, -100.0, 89.53],
+                "allowVehicle": false,
+                "drawText": "The Richman Hotel"
+            },
+            {
+                "coords": [-1274.03, 315.33, 64.51, 155.17],
+                "allowVehicle": false,
+                "drawText": "Lobby"
+            }
         ]
     ]
 }
