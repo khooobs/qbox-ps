@@ -308,7 +308,20 @@
         end
     end)
 
-    -- event pour qu'un joueur soigne entierement un autre
+    -- event pour qu'un joueur soit soigné (hors jeu)
+    RegisterNetEvent('qbx_Ab_Medic:client:Heal', function()
+        local playerPedid = GetPlayerPed(GetPlayerFromServerId(source)) -- Obtenir le ped du joueur local
+        local playerCurrentHealth = GetEntityHealth(playerPedid)
+        local playerMaxHealth = Config.max_health
+
+        if playerCurrentHealth < playerMaxHealth then
+            -- Appeler la fonction générique soigner
+            FullHealPlayer(playerPedid, playerCurrentHealth, playerMaxHealth)
+            print ("Le joueur: " ..playerPedid.. " qui a pour pv : " ..playerCurrentHealth.. " le max est : " ..playerMaxHealth.. " est soigné")
+        end
+    end)
+
+    -- event pour qu'un joueur soigne entierement un autre avec un med kit
     RegisterNetEvent('qbx_Ab_Medic:client:useMedKit', function(playerSrc)
         print(source)
         local playerPedid = GetPlayerPed(GetPlayerFromServerId(source)) -- Obtenir le ped du joueur local
