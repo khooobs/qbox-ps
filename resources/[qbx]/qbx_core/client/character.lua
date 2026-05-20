@@ -285,6 +285,8 @@ local function spawnDefault() -- We use a callback to make the server wait on th
         Wait(0)
     end
     TriggerEvent('qb-clothes:client:CreateFirstCharacter')
+    -- ajout pour heal direct need qbx_Ab_Medic_for_PSRP
+    TriggerEvent('qbx_Ab_Medic:client:Heal')
 end
 
 local function spawnLastLocation()
