@@ -87,12 +87,12 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 .hover {
-    opacity: 0.75;
+    opacity: 0;
     transition: var(--hover-transition);
 }
 
 .hover:hover {
-    opacity: 1;
+    opacity: 0;
 }
 
 #error-wrapper {

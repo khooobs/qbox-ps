@@ -79,14 +79,14 @@ function onPlayerConnecting(name, _setKickReason, deferrals) {
         paths,
 
         config: {
-            style: GetConvar('loadscreen:style', 'minimal'),
-            background: GetConvar('loadscreen:background', 'image'),
+            style: GetConvar('loadscreen:style', 'modern'),
+            background: GetConvar('loadscreen:background', 'video'),
             backgroundBrightness:
-                GetConvarInt('loadscreen:backgroundBrightness', 30) / 100,
+                GetConvarInt('loadscreen:backgroundBrightness', 100) / 100,
             textColor: GetConvar('loadscreen:textColor', 'rgb(250, 250, 250)'),
             primaryColor: GetConvar(
                 'loadscreen:primaryColor',
-                'rgb(64, 64, 255)',
+                'rgb(59, 59, 169)',
             ),
             secondaryColor: GetConvar(
                 'loadscreen:secondaryColor',
@@ -104,20 +104,20 @@ function onPlayerConnecting(name, _setKickReason, deferrals) {
             logo: GetConvarInt('loadscreen:logo', 1) == 1,
             serverMessage: GetConvar(
                 'loadscreen:serverMessage',
-                '${playerName}, welcome to ${serverName}!',
+                '${playerName}, Bienvenue sur Pocket Stories !',
             ),
             primaryBar: GetConvarInt('loadscreen:primaryBar', 1) == 1,
             secondaryBar: GetConvarInt('loadscreen:secondaryBar', 0) == 1,
             loadingAction: GetConvarInt('loadscreen:loadingAction', 0) == 1,
             finishingMessage: GetConvar(
                 'loadscreen:finishingMessage',
-                'Finishing up...',
+                'Ça arrive...',
             ),
             logLine: GetConvarInt('loadscreen:logLine', 1) == 1,
             finishedMessage: GetConvar('loadscreen:finishedMessage', 'Done!'),
             finishedLine: GetConvar(
                 'loadscreen:finishedLine',
-                'You will be loaded in any moment now...',
+                'Ça arrive FORT FORT... !',
             ),
             audioControls: GetConvarInt('loadscreen:audioControls', 1) == 1,
             audioMuteKey: GetConvar('loadscreen:audioMuteKey', 'Space'),
@@ -125,7 +125,7 @@ function onPlayerConnecting(name, _setKickReason, deferrals) {
             errorLog: GetConvarInt('loadscreen:errorLog', 1) == 1,
 
             initialAudioVolume:
-                GetConvarInt('loadscreen:initialAudioVolume', 10) / 100,
+                GetConvarInt('loadscreen:initialAudioVolume', 20) / 100,
 
             music: GetConvarInt('loadscreen:music', 1) == 1,
             musicShuffle: GetConvarInt('loadscreen:musicShuffle', 0) == 1,
@@ -135,7 +135,7 @@ function onPlayerConnecting(name, _setKickReason, deferrals) {
             videoShuffle: GetConvarInt('loadscreen:videoShuffle', 0) == 1,
             embedLink: GetConvar(
                 'loadscreen:embedLink',
-                'https://www.youtube.com/embed?playlist=E49ureeMykI&autoplay=1&loop=1',
+                'https://www.youtube.com/watch?v=cBgercQeiTo',
             ),
             embedAccess: GetConvarInt('loadscreen:embedAccess', 1) == 1,
         },
