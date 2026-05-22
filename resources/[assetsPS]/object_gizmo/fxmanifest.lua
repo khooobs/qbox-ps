@@ -8,7 +8,7 @@ client_scripts {
 	"client/gizmo.lua",
 	'client/test.lua'
 }
-description 'Dépendance pour placer précisément les lumières lors de l'édition'
+description "Dépendance pour placer précisément les lumières lors de l'édition"
 shared_scripts {
 	'@ox_lib/init.lua'
 }
