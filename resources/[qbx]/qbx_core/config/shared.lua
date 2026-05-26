@@ -1,6 +1,6 @@
 return {
     serverName = 'Pocket Stories',
-    defaultSpawn = vec4(231.37, -995.15, -95.12, 92.23),
+    defaultSpawn = vec4(231.1814, -995.1597, -96.9546, 76.5967),
     notifyPosition = 'top-right', -- 'top' | 'top-right' | 'top-left' | 'bottom' | 'bottom-right' | 'bottom-left'
     ---@type { name: string, amount: integer, metadata: fun(source: number): table }[]
     starterItems = { -- Character starting items
