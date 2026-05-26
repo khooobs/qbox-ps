@@ -1,13 +1,29 @@
 -- Admin check permissions ACE dans config server
+/*
 local function isAdmin()
     return IsPlayerAceAllowed(PlayerId(), "group.admin")
 end
 
--- Commande à taper
+
 RegisterCommand('tpme', function()
     local isAdmin = lib.callback.await('tpmenu:isAdmin', false)
 
     if not isAdmin then
+        lib.notify({
+            title = 'Non non non non non !',
+            description = 'Depuis quand tu es admin ?',
+            type = 'error'
+        })
+        return
+    end
+*/
+
+
+-- Commande à taper
+RegisterCommand('tpme', function()
+
+    local playerjob = QBX.PlayerData.job.name
+    if playerjob ~= "admin" then
         lib.notify({
             title = 'Non non non non non !',
             description = 'Depuis quand tu es admin ?',
