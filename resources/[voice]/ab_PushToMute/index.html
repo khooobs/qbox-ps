@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #mic {
+            position: absolute;
+            bottom: 0%;
+            right: 5%;
+            width: 32px;
+            height: 32px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.9;
+        }
+
+        .on {
+            background-image: url("mic_on.png");
+        }
+
+        .off {
+            background-image: url("mic_off.png");
+        }
+    </style>
+</head>
+<body>
+
+<div id="mic" class="on"></div>
+
+<script>
+window.addEventListener("message", function(event) {
+    if (event.data.action === "updateMic") {
+        const mic = document.getElementById("mic");
+
+        if (event.data.muted) {
+            mic.classList.remove("on");
+            mic.classList.add("off");
+        } else {
+            mic.classList.remove("off");
+            mic.classList.add("on");
+        }
+    }
+});
+</script>
+
+</body>
+</html>

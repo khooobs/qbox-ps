@@ -504,6 +504,8 @@ RegisterNetEvent('qbx_core:client:spawnNoApartments', function() -- This event i
     TriggerServerEvent('qb-apartments:server:SetInsideMeta', 0, 0, false)
     TriggerEvent('qb-weathersync:client:EnableSync')
     TriggerEvent('qb-clothes:client:CreateFirstCharacter')
+    -- ajout pour heal direct need qbx_Ab_Medic_for_PSRP
+    TriggerEvent('qbx_Ab_Medic:client:Heal')
 end)
 
 RegisterNetEvent('qbx_core:client:playerLoggedOut', function()
