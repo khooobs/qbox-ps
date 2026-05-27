@@ -263,6 +263,7 @@ function client.openInventory(inv, data)
     end
 
     plyState.invOpen = true
+	TriggerEvent('scully_emotemenu:setLimitation', true)
 
     SetInterval(client.interval, 100)
     SetNuiFocus(true, true)
@@ -320,6 +321,7 @@ RegisterNetEvent('ox_inventory:forceOpenInventory', function(left, right)
 	if source == '' then return end
 
 	plyState.invOpen = true
+	TriggerEvent('scully_emotemenu:setLimitation', true)
 
 	SetInterval(client.interval, 100)
 	SetNuiFocus(true, true)
@@ -899,6 +901,7 @@ function client.closeInventory(server)
 
 		currentInventory = nil
 		plyState.invOpen = false
+		TriggerEvent('scully_emotemenu:setLimitation', false)
 		defaultInventory.coords = nil
 	end
 end
@@ -1580,6 +1583,7 @@ RegisterNetEvent('ox_inventory:viewInventory', function(left, right)
 	if source == '' then return end
 
 	plyState.invOpen = true
+	TriggerEvent('scully_emotemenu:setLimitation', false)
 
 	SetInterval(client.interval, 100)
 	SetNuiFocus(true, true)
