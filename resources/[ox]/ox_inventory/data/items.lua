@@ -319,7 +319,7 @@ return {
             consume = 0,
             client = {
                 image = "medical_kit.png",
-                export = 'qbx_Ab_Medic.medical_kit'
+                export = 'qbx_Ab_Medic_for_PSRP.medical_kit'
             }    
         },
         ["bandage"] = {
@@ -331,7 +331,7 @@ return {
             consume = 0,
             client = {
                 image = "bandage.png",
-                export = 'qbx_Ab_Medic.bandage'
+                export = 'qbx_Ab_Medic_for_PSRP.bandage'
             }    
         },
         ["stethoscope"] = {
@@ -343,7 +343,7 @@ return {
             consume = 0,
             client = {
                 image = "stethoscope.png",
-                export = 'qbx_Ab_Medic.Stéthoscope'
+                export = 'qbx_Ab_Medic_for_PSRP.Stéthoscope'
             }    
         },
 
