@@ -7515,6 +7515,28 @@ return {
                     },
                 },
             },
+        }, 
+        { -- ajout abesses
+            Label = 'Vinewood Tour Sign',
+            Command = 'signvt',
+            Animation = 'base_club_shoulder',
+            Dictionary = 'rcmnigel1d',
+            Options = {
+                Flags = {
+                    Loop = true,
+                    Move = true,
+                },
+                Props = {
+                    {
+                        Bone = 60309,
+                        Name = 'prop_sign_road_05t',
+                        Placement = {
+                            vec3(-0.139, -0.987, 0.43),
+                            vec3(-67.331528, 145.062790, -4.431889),
+                        },
+                    },
+                },
+            },
         },
         {
             Label = 'Steal Freeway Sign',

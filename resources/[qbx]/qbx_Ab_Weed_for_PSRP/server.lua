@@ -80,6 +80,7 @@ local MINUTE = 60
 -- FAIRE DES JOINS
 
     RegisterNetEvent('qbx_Ab_Weed:craftJoin', function(slot)
+
         local src = source
         -- Vérifie si l'utilisateur a les items nécessaires
         local paperhere = exports.ox_inventory:GetItemCount(src, Config.item_rollpaper)
