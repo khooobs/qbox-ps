@@ -478,7 +478,7 @@ return {
 
     -- Abesses doc image 
 
-        ["docimage_brochureVT"] = {
+        ["docimage_brochure_vt"] = {
             label = "Brochure VT",
             weight = 100,
             stack = false,
@@ -487,7 +487,7 @@ return {
             consume = 0,
             client = {
                 image = "paperprint.png",
-                export = 'qbx_Ab_ImagesDoc.docimage_brochureVT'
+                export = 'qbx_Ab_ImagesDoc.docimage_brochure_vt'
             }        
         },
 
