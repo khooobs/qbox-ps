@@ -18,7 +18,7 @@ Config.Teleports = {
     },
     {
         title = "Cinéma de Vinewood",
-        coords = vec3(300.5927, 199.7589, 104.3776),
+        coords = vec3(302.2618, 205.2455, 104.3727),
         icon = "clapperboard"
     },
     {
