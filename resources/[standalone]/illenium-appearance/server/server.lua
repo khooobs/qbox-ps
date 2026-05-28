@@ -312,7 +312,7 @@ if Config.EnablePedMenu then
                 optional = true
             },
         },
-        restricted = Config.PedMenuGroup
+        --restricted = Config.PedMenuGroup
     }, function(source, args)
         local target = source
         if args.playerID then
@@ -329,6 +329,15 @@ if Config.EnablePedMenu then
                 return
             end
         end
+        
+        -- ICI MODIF POUR JOB ADMIN POUR LE MENU
+        local Player = exports.qbx_core:GetPlayer(source)
+
+        if not Player then return end
+
+        local playerjob = Player.PlayerData.job.name
+        if playerjob ~= "admin" then exports.qbx_core:Notify(source, locale('Need Job Admin'), 'error') return end
+
         TriggerClientEvent("illenium-appearance:client:openClothingShopMenu", target, true)
     end)
 end
