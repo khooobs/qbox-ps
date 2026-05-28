@@ -285,8 +285,6 @@ local function spawnDefault() -- We use a callback to make the server wait on th
         Wait(0)
     end
     TriggerEvent('qb-clothes:client:CreateFirstCharacter')
-    -- ajout pour heal direct need qbx_Ab_Medic_for_PSRP
-    TriggerEvent('qbx_Ab_Medic:client:Heal')
 end
 
 local function spawnLastLocation()
@@ -355,6 +353,10 @@ local function createCharacter(cid)
     end
 
     destroyPreviewCam()
+
+    -- ajout pour heal direct need qbx_Ab_Medic_for_PSRP
+    TriggerEvent('qbx_Ab_Medic:client:Heal')
+
     return true
 end
 
@@ -504,8 +506,6 @@ RegisterNetEvent('qbx_core:client:spawnNoApartments', function() -- This event i
     TriggerServerEvent('qb-apartments:server:SetInsideMeta', 0, 0, false)
     TriggerEvent('qb-weathersync:client:EnableSync')
     TriggerEvent('qb-clothes:client:CreateFirstCharacter')
-    -- ajout pour heal direct need qbx_Ab_Medic_for_PSRP
-    TriggerEvent('qbx_Ab_Medic:client:Heal')
 end)
 
 RegisterNetEvent('qbx_core:client:playerLoggedOut', function()

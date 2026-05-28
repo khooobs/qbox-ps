@@ -20,7 +20,7 @@ Config = {
     harvesteditem = "os_weed",
 
     item_joint = "os_joint",
-    item_rollpaper = "rollpaper",
+    item_rollpaper = "os_rollpaper",
     item_cigarette = "cigarette",
     item_cigarette_pack = "cig_pack",
     item_cigare = 'cigare',

@@ -13,7 +13,13 @@ lib.addCommand('admin', {
     help = 'Opens Admin Menu',
     restricted = config.useMenu,
 }, function(source)
-    if not exports.qbx_core:IsOptin(source) then exports.qbx_core:Notify(source, locale('error.not_optin'), 'error') return end
+    -- ICI MODIF POUR JOB ADMIN POUR LE MENU
+    local Player = exports.qbx_core:GetPlayer(source)
+
+    if not Player then return end
+
+    local playerjob = Player.PlayerData.job.name
+    if playerjob ~= "admin" then exports.qbx_core:Notify(source, locale('Need Job Admin'), 'error') return end
     TriggerClientEvent('qbx_admin:client:openMenu', source)
 end)
 

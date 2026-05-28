@@ -319,7 +319,7 @@ return {
             consume = 0,
             client = {
                 image = "medical_kit.png",
-                export = 'qbx_Ab_Medic.medical_kit'
+                export = 'qbx_Ab_Medic_for_PSRP.medical_kit'
             }    
         },
         ["bandage"] = {
@@ -331,7 +331,7 @@ return {
             consume = 0,
             client = {
                 image = "bandage.png",
-                export = 'qbx_Ab_Medic.bandage'
+                export = 'qbx_Ab_Medic_for_PSRP.bandage'
             }    
         },
         ["stethoscope"] = {
@@ -343,7 +343,7 @@ return {
             consume = 0,
             client = {
                 image = "stethoscope.png",
-                export = 'qbx_Ab_Medic.Stéthoscope'
+                export = 'qbx_Ab_Medic_for_PSRP.Stéthoscope'
             }    
         },
 
@@ -356,11 +356,11 @@ return {
             consume = 0,
             client = {
                 image = "weed_pochon.png",
-                export = 'qbx_Ab_Weed.os_weed'
+                export = 'qbx_Ab_Weed_for_PSRP.os_weed'
             },
             buttons = {
                 {
-                    label = 'Rouler un joint',
+                    label = 'Rouler des joints',
                     action = function(slot)
                         --print('roule un join')
                         local paperhere = exports.ox_inventory:GetItemCount("os_rollpaper")
@@ -375,7 +375,7 @@ return {
                                 --print ("cig present")
                                 -- Appel au serveur pour retirer les items et ajouter un joint
                                 TriggerServerEvent('qbx_Ab_Weed:craftJoin', slot)
-                                TriggerServerEvent('qbx_Ab_Garbages:server:addTrash', 'Pochon_empty')
+                                --TriggerServerEvent('qbx_Ab_Garbages:server:addTrash', 'Pochon_empty')
                             else
                                 --print ("cig absent")
                                 exports.qbx_core:Notify("il faut une cigarette", 'error', 7000)
@@ -396,7 +396,7 @@ return {
             consume = 0,
             client = {
                 image = "weed_papier.png",
-                export = 'qbx_Ab_Weed.os_rollpaper'
+                export = 'qbx_Ab_Weed_for_PSRP.os_rollpaper'
             },       
         },
         ["os_joint"] = {
@@ -406,7 +406,7 @@ return {
             close = true,
             client = {
                 image = "joint.png",
-                export = 'qbx_Ab_Weed.os_joint'
+                export = 'qbx_Ab_Weed_for_PSRP.os_joint'
             },       
         },
         ["cig_pack"] = {
@@ -417,7 +417,7 @@ return {
             consume = 0,
             client = {
                 image = "cig_pack.png",
-                export = 'qbx_Ab_Weed.cig_pack'
+                export = 'qbx_Ab_Weed_for_PSRP.cig_pack'
             },
             buttons = {
                 {
@@ -438,7 +438,7 @@ return {
             close = true,
             client = {
                 image = "cigarette.png",
-                export = 'qbx_Ab_Weed.cigarette'
+                export = 'qbx_Ab_Weed_for_PSRP.cigarette'
             },       
         },
         ['cigare'] = {
@@ -448,7 +448,7 @@ return {
             close = true,
             client = {
                 image = "cigare.png",
-                export = 'qbx_Ab_Weed.cigare'
+                export = 'qbx_Ab_Weed_for_PSRP.cigare'
             },       
         },
         ["water_can"] = {
@@ -460,7 +460,7 @@ return {
             description = "Un Arrosoir vide.",
             client = {
                 image = "water_can.png",
-                export = 'qbx_Ab_Weed.water_can'
+                export = 'qbx_Ab_Weed_for_PSRP.water_can'
             },       
         },
         ["water_can_full"] = {
@@ -472,8 +472,23 @@ return {
             description = "Un Arrosoir plein d'eau.",
             client = {
                 image = "water_can_full.png",
-                export = 'qbx_Ab_Weed.water_can_full'
+                export = 'qbx_Ab_Weed_for_PSRP.water_can_full'
             },       
+        },
+
+    -- Abesses doc image 
+
+        ["docimage_brochureVT"] = {
+            label = "Brochure VT",
+            weight = 100,
+            stack = false,
+            close = true,
+            description = "La brochure du Vinewood Tour",
+            consume = 0,
+            client = {
+                image = "paperprint.png",
+                export = 'qbx_Ab_ImagesDoc.docimage_brochureVT'
+            }        
         },
 
 }
