@@ -14,7 +14,7 @@ return {
     enableGangEmotes = GetConvar('scully_emotemenu:enableGangEmotes', 'false') == 'true',
     enableSocialMovementEmotes = GetConvar('scully_emotemenu:enableSocialMovementEmotes', 'false') == 'true',
     enableConsumableEmotes = GetConvar('scully_emotemenu:enableConsumableEmotes', 'false') == 'true',
-    enableSynchronizedEmotes = true --GetConvar('scully_emotemenu:enableSynchronizedEmotes', 'false') == 'true',
+    enableSynchronizedEmotes = true, --GetConvar('scully_emotemenu:enableSynchronizedEmotes', 'false') == 'true',
     enableAnimalEmotes = GetConvar('scully_emotemenu:enableAnimalEmotes', 'false') == 'true',
     enableWeaponBlock = GetConvar('scully_emotemenu:enableWeaponBlock', 'false') == 'true',
     enableAimShootBlock = GetConvar('scully_emotemenu:enableAimShootBlock', 'true') == 'true',
