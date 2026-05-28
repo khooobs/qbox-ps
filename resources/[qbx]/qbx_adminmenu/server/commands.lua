@@ -11,7 +11,7 @@ end)
 
 lib.addCommand('admin', {
     help = 'Opens Admin Menu',
-    restricted = config.useMenu,
+    --restricted = config.useMenu,
 }, function(source)
     -- ICI MODIF POUR JOB ADMIN POUR LE MENU
     local Player = exports.qbx_core:GetPlayer(source)
