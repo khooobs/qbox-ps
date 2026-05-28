@@ -1,7 +1,7 @@
 Config = {
 
     items = {
-        'docimage_brochureVT',
+        'docimage_brochure_vt',
 
     },
 
